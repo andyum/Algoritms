@@ -10,9 +10,9 @@ def qSort (A, nStart, nEnd):
 
     while L <= R:
         while A[L] < X:
-            L = L + 1
+            L += 1
         while A[R] > X:
-            R = R - 1
+            R -= 1
         if L <= R:
             A[L], A[R] = A[R], A[L]
             L += 1

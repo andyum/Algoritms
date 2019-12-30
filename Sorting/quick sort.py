@@ -17,14 +17,12 @@ def qSort (A, nStart, nEnd):
             A[L], A[R] = A[R], A[L]
             L += 1
             R -= 1
-    qSort (A, nStart, R)
-    qSort (A, L, nEnd)
+    qSort(A, nStart, R)
+    qSort(A, L, nEnd)
 
 N = 10
 A = [randint(1,10) for i in range(N)]
 print('Source array ', A)
 
-qSort (A, 0, N-1)
-print('Sorted array ', A)
-
 qSort(A, 0, N-1)
+print('Sorted array ', A)

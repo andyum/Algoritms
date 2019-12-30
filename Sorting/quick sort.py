@@ -26,3 +26,5 @@ print('Source array ', A)
 
 qSort (A, 0, N-1)
 print('Sorted array ', A)
+
+qSort(A, 0, N-1)
